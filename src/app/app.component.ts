@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  applogo = "../assets/images/af_pattern_bg.png";
   title = 'AirfranceKlm';
+  // constructor(router: Router){ 
+  //   router.navigate(['/home'])
+  // }
 }
