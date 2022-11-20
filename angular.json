@@ -103,5 +103,7 @@
       }
     }
   },
-  "defaultProject": "AirfranceKlm"
+  "cli": {
+    "analytics": false
+  }
 }

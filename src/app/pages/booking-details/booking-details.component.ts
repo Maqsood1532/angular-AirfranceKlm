@@ -18,7 +18,7 @@ export class BookingDetailsComponent implements OnInit {
 
     this.apollo.watchQuery<Query>({
       query: gql`
-        qquery  {
+        query  {
           getBookingDetails {
             bookingCode
             itinerary {
@@ -46,6 +46,7 @@ export class BookingDetailsComponent implements OnInit {
     })
       .valueChanges
       .subscribe(({data, loading}) => {
+        console.log(data);
         this.bookingDetails = data.bookingDetails;
       })
   }

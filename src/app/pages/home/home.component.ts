@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl,  FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl,  UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { RequestForm } from 'src/models/form.model';
 
@@ -10,7 +10,7 @@ import { RequestForm } from 'src/models/form.model';
 export class HomeComponent implements OnInit {
 
   request: RequestForm;
-  public form: FormGroup;
+  public form: UntypedFormGroup;
 
   // emptyUserName = 'You must enter a username';
   // minlengthUserName = 'User name must be at least 3 characters long';
@@ -26,12 +26,12 @@ export class HomeComponent implements OnInit {
   };
 
   protected initiateForm(): void {
-    this.form = new FormGroup({
-      bookingCode: new FormControl(null, {validators: [Validators.required, 
+    this.form = new UntypedFormGroup({
+      bookingCode: new UntypedFormControl(null, {validators: [Validators.required, 
                                                        Validators.minLength(5), 
                                                        Validators.maxLength(6), 
                                                        Validators.pattern("^[A-Za-z2-9_-]*$")]}),
-      familyName: new FormControl(null, {validators: [Validators.required, Validators.minLength(2), Validators.maxLength(30)]})
+      familyName: new UntypedFormControl(null, {validators: [Validators.required, Validators.minLength(2), Validators.maxLength(30)]})
     });
   }
 
