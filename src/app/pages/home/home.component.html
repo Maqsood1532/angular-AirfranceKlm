@@ -1,0 +1,34 @@
+<div class="blank-height"></div>
+<div class="form-container">
+    <h2>RETRIEVE YOUR BOOKING <br> _ </h2>
+    <p class="marTop34px">You can find your boking by filling out your family name and the booking code in your booking confirmation</p>
+    <form [formGroup]="form">
+        <div class="marTop34px">
+            <div class="form-group">
+                <label for="email">Booking code</label>
+                <input id="code"
+                       name="bookingCode"
+                       autocomplete="off"
+                       formControlName="bookingCode"
+                       type="text" 
+                       class="form-control marTop5px rounded-0"  
+                       placeholder="Enter booking code">
+              </div>
+              <div class="form-group marTop11px">
+                <label for="pwd">Family name</label>
+                <input id="name"
+                       name="familyName" 
+                       autocomplete="off"
+                       formControlName="familyName"
+                       type="text" 
+                       class="form-control marTop5px rounded-0"  
+                       placeholder="Enter family name">
+              </div>
+        </div>
+        <div class="form-group marTop34px" style="text-align:center;">
+            <button type="button" 
+                    class="btn btn-danger rounded-0"
+                    (click)="getBookingDetails()">Retrieve booking</button>
+        </div>
+    </form>
+</div>
