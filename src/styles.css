@@ -23,15 +23,15 @@
 
 .app-container .app-header .app-title {
     position: absolute;
-    margin-top: -50px;
-    margin-left: 43%;
+    margin-top: -43px;
+    margin-left: 46%;
     color: white;
 }
 
 .form-container {
     margin: 0px auto;
     width: 400px;
-    height: 542px;
+    height: 532px;
     border: 1px solid black;
     padding: 33px;
 }
