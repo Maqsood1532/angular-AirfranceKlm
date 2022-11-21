@@ -71,6 +71,7 @@ export const getBookingDetails = gql`
                     operatingFlight {
                         number
                         carrier {
+                        code
                         name
                         }
                         duration

@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
 
   applogo = "../assets/images/af_pattern_bg.png";
   title = 'AirfranceKlm';
-  // constructor(router: Router){ 
-  //   router.navigate(['/home'])
-  // }
+
 }

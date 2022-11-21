@@ -28,7 +28,8 @@
         <div class="form-group marTop34px" style="text-align:center;">
             <button type="button" 
                     class="btn btn-danger rounded-0"
-                    (click)="getBookingDetails()">Retrieve booking</button>
+                    (click)="getBookingDetails()"
+                    [disabled]="!form.valid">Retrieve booking</button>
         </div>
     </form>
 </div>

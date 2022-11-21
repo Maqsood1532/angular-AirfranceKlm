@@ -56,7 +56,6 @@ export class HomeComponent implements OnInit {
         .valueChanges
         .subscribe(({data, loading}) => {
           if(data.seachBooking != null){
-            alert("Record found")
              //navigate to booking-details page
             this.router.navigate(["/booking-details"]);
           }

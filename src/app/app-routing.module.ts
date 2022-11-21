@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'booking-details',
-    component: BookingDetailsComponent
+    component: BookingDetailsComponent,
   },
   {
     path: RouteLinks.Home,

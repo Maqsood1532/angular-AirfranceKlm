@@ -55,7 +55,6 @@ export class BookingDetailsComponent implements OnInit {
           this.arriveOn = data.getBookingDetails.itinerary.connections[0].segments[0].arriveOn;
           this.marketingFlight = data.getBookingDetails.itinerary.connections[0].segments[0].marketingFlight;
           this.passengers = data.getBookingDetails.passengers;
-          console.log(data.getBookingDetails.passengers)
 
           this.departureDay = Utility.getDayOfWeek(this.marketingFlight.operatingFlight.scheduledDeparture);
           this.arrivalDay = Utility.getDayOfWeek(this.marketingFlight.operatingFlight.scheduledArrival);
@@ -69,7 +68,7 @@ export class BookingDetailsComponent implements OnInit {
                               + this.marketingFlight.status.name; 
 
           this.airline = this.segments.marketingFlight.carrier.name + " (" 
-                         + this.segments.marketingFlight.carrier.code + ") " 
+                         + this.segments.marketingFlight.operatingFlight.carrier.code + ") " 
                          + this.segments.marketingFlight.number;
 
         }
